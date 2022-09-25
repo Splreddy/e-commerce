@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CARA SHOP IT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="full-page">
+        <div class="sub-page">
+            <section id="header">
+                <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+                <div>
+                    <ul id="navbar">
+                        <li><a class="active" href="account.html">Login</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="Cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+            <div class="row">
+                <div class="col-1">
+                    <div class="form-box">
+                        <div class="form">
+                            <form class="login-form">
+                                <centre>
+                                    <h1 class="main-heading">Login</h1>
+                                </centre>
+                                <input type="text" name="user name" />
+                                <input type="password" name="password" />
+                                <button>LOGIN</button>
+                                <p class="message">Not Registered? <a href="#">Register</a></p>
+                            </form>
+                            <form class="register-form">
+                                <centre>
+                                    <h1 class="main-heading">Register</h1>
+                                </centre>
+                                <input type="text" placeholder="user name" />
+                                <input type="text" placeholder="email-id" />
+                                <input type="password" placeholder="password" />
+                                <button>REGISTER</button>
+                                <p class="message">Already Registered?<a href="#">Login</a>
+                                </p>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'>
+    </script>
+    <script>
+        $('.message a').click(function () { $('form').animate({ height: "toggle", opacity: "toggle" }, "slow"); });
+    </script>
+</body>
+
+</html>
